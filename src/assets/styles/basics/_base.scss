@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: $clr-selection;
+  color: $clr-dark1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set base font size and line height */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $clr-dark1;
+  background-color: $clr-light1;
+}
+
+/* Remove hyperlink text decoration */
+a {
+  text-decoration: none;
+}
+
+/* Remove default button styling */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Remove default button styles in Firefox */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Reset some default values that can vary between browsers */
+input {
+  overflow: visible;
+}
+
+/* Reset table border spacing and border-collapse */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set max-width: 100% to make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
