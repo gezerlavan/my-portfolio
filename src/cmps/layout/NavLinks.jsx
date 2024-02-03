@@ -6,7 +6,7 @@ export function NavLinks({ isOpen }) {
       <ul className={isOpen ? 'open' : ''}>
         {navLinks.map((link, idx) => (
           <li key={idx}>
-            <a>{link}</a>
+            <a href={`#${link.toLowerCase()}`}>{link}</a>
           </li>
         ))}
       </ul>

@@ -8,8 +8,10 @@ export function Hero() {
     if (!link) return
     const linkedinUrl = 'https://www.linkedin.com/in/talelias/'
     const githubUrl = 'https://github.com/gezerlavan'
-    if (link === 'linkedin') window.open(linkedinUrl, '_blank')
-    if (link === 'github') window.open(githubUrl, '_blank')
+    if (link === 'linkedin')
+      window.open(linkedinUrl, '_blank', 'noopener,noreferrer')
+    if (link === 'github')
+      window.open(githubUrl, '_blank', 'noopener,noreferrer')
   }
 
   function onDownloadCV() {

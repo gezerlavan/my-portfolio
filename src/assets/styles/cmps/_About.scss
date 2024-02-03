@@ -1,0 +1,43 @@
+section.about {
+  position: relative;
+
+  dialog {
+    opacity: 0.94;
+    border-radius: 2em;
+    .dialog-container {
+      button {
+      }
+    }
+  }
+
+  .about-container {
+    gap: 4rem;
+    height: 80%;
+
+    img {
+      border-radius: 2rem;
+    }
+
+    .about-containers {
+      gap: 2rem;
+      margin-block: 2rem;
+
+      .details-container {
+        padding: 1.5rem;
+        flex: 1;
+        background: $clr-light1;
+        background: inherit;
+        border-radius: 2rem;
+        border: $clr-dark2 0.1rem solid;
+        border-color: rgb(163, 163, 163);
+        text-align: center;
+
+        span.certificate {
+          font-weight: 600;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

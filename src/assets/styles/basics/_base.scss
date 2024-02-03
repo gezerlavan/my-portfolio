@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+// :root {
+//   color-scheme: light dark;
+// }
+
 ::selection {
   background-color: $clr-selection;
   color: $clr-dark1;
@@ -31,7 +35,6 @@ fieldset,
 legend {
   margin: 0;
   padding: 0;
-  font-weight: normal;
 }
 
 /* Set base font size and line height */
@@ -41,20 +44,21 @@ body {
   line-height: 1.5;
   color: $clr-dark1;
   background-color: $clr-light1;
+  background-color: grey; /*temp */
 }
 
 a {
   color: $clr-dark1;
   text-decoration: none;
   text-decoration-color: $clr-light1;
-}
 
-a:hover {
-  color: $clr-dark4;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: $clr-dark5;
-  cursor: pointer;
+  &:hover {
+    color: $clr-dark4;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: $clr-dark5;
+    cursor: pointer;
+  }
 }
 
 a,
@@ -109,17 +113,19 @@ img {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 100vh;
   min-height: fit-content;
 
   .title {
     font-size: 3rem;
     text-align: center;
+    font-weight: 600;
   }
 
   .pic-container {
+    display: flex;
     height: 400px;
-    width: 400px;
+    min-width: 400px;
     margin: auto 0;
   }
 
@@ -182,4 +188,14 @@ section {
 .icon {
   height: 2rem;
   cursor: pointer;
+
+  &.default {
+    cursor: default;
+  }
+
+  &.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }
 }
