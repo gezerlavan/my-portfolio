@@ -1,0 +1,27 @@
+section.hero {
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+
+  img {
+    border-radius: 50%;
+  }
+
+  .section-text {
+    align-self: center;
+    text-align: center;
+
+    p {
+      font-weight: 600;
+    }
+
+    h1 {
+      font-weight: 700;
+    }
+  }
+
+  .socials-container {
+    gap: 1rem;
+    margin-block-start: 1rem;
+  }
+}
