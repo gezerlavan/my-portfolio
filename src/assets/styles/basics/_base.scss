@@ -49,9 +49,23 @@ body {
   background-color: $clr-light1;
 }
 
-/* Remove hyperlink text decoration */
 a {
+  color: $clr-dark1;
   text-decoration: none;
+  text-decoration-color: $clr-light1;
+}
+
+a:hover {
+  color: $clr-dark4;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: $clr-dark5;
+  cursor: pointer;
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
 }
 
 /* Remove default button styling */

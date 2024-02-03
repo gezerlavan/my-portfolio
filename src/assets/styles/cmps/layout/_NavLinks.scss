@@ -1,0 +1,32 @@
+nav.nav-links {
+  @include for-mobile-layout {
+    ul {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      width: fit-content;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3 ease-in-out;
+
+      &.open {
+        max-height: 300px;
+      }
+
+      li {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: .4em;
+      }
+    }
+  }
+
+  @include for-normal-layout {
+    ul {
+      display: flex;
+      gap: 2rem;
+      font-size: 1.5rem;
+    }
+  }
+}
