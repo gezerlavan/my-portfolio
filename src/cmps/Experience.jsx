@@ -1,7 +1,7 @@
 import { useRef } from 'react'
-import arrowIcon from '../assets/img/arrow.png'
 import experienceIcon from '../assets/img/experience.png'
 import useOnScreen from '../customHooks/useOnScreen'
+import { ArrowIcon } from './layout/ArrowIcon'
 
 export function Experience() {
   const experienceSectionRef = useRef(null)
@@ -33,7 +33,7 @@ export function Experience() {
 
   return (
     <section ref={experienceSectionRef} id="experience" className="experience">
-      <p className="section-text-p1">Explore My</p>
+      <p className="section-text-p1">Explore my</p>
       <h1 className="title">Experience</h1>
       <div className="experience-containers flex">
         {experienceSkills.map((skillSet, idx) => (
@@ -60,14 +60,7 @@ export function Experience() {
           </div>
         ))}
       </div>
-      <img
-        src={arrowIcon}
-        alt="Arrow icon"
-        className="arrow icon"
-        onClick={() => {
-          window.location.href = '#projects'
-        }}
-      />
+      <ArrowIcon redirect={'#projects'} />
     </section>
   )
 }

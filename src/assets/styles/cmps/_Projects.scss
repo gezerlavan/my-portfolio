@@ -1,0 +1,37 @@
+section.projects {
+  position: relative;
+
+  .projects-article-container {
+    gap: 2rem;
+    margin-block: 2rem;
+
+    .article-container {
+      padding: 1.5rem;
+      flex: 1;
+      border-radius: 2rem;
+      border: 0.1rem solid rgb(163, 163, 163);
+      text-align: center;
+      background: rgb(250, 250, 250);
+
+      .img-contianer {
+        img {
+          width: 90%;
+          height: 90%;
+          border-radius: 2rem;
+        }
+      }
+
+      h2.project-title {
+        margin: 1rem;
+        font-size: 1.75rem;
+        font-weight: 600;
+      }
+
+      .btn-container {
+        button {
+          border-color: rgb(163, 163, 163)
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,9 @@
 import { About } from './cmps/About'
+import { Contact } from './cmps/Contact'
 import { Experience } from './cmps/Experience'
 import { Hero } from './cmps/Hero'
+import { Projects } from './cmps/Projects'
+import { PageFooter } from './cmps/layout/PageFooter'
 import { PageHeader } from './cmps/layout/PageHeader'
 
 export function App() {
@@ -10,6 +13,9 @@ export function App() {
       <Hero />
       <About />
       <Experience />
+      <Projects />
+      <Contact />
+      <PageFooter />
     </main>
   )
 }

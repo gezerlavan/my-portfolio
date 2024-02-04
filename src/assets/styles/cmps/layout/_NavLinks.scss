@@ -17,7 +17,20 @@ nav.nav-links {
       li {
         font-size: 1.5rem;
         text-align: center;
-        padding: .4em;
+        padding: 0.4em;
+
+        a.nav-link {
+          color: $clr-dark1;
+          text-decoration-color: $clr-light1;
+
+          &:hover {
+            color: $clr-dark4;
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+            text-decoration-color: $clr-dark5;
+            cursor: pointer;
+          }
+        }
       }
     }
   }

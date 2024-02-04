@@ -1,9 +1,9 @@
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import profilePic from '../assets/img/profile-pic.jpg'
-import arrowIcon from '../assets/img/arrow.png'
 import experienceIcon from '../assets/img/experience.png'
 import certificate from '../assets/full_stack_certificate.jpg'
 import useClickOutside from '../customHooks/useClickOutside'
+import { ArrowIcon } from './layout/ArrowIcon'
 
 export function About() {
   const dialogRef = useRef(null)
@@ -23,7 +23,7 @@ export function About() {
 
   return (
     <section id="about" className="about">
-      <p className="section-text-p1">Get To Know More</p>
+      <p className="section-text-p1">Get to know more</p>
       <h1 className="title">About Me</h1>
       <div className="about-container flex">
         <div className="pic-container">
@@ -91,14 +91,7 @@ export function About() {
           </button>
         </div>
       </dialog>
-      <img
-        src={arrowIcon}
-        alt="Arrow icon"
-        className="arrow icon"
-        onClick={() => {
-          window.location.href = '#experience'
-        }}
-      />
+      <ArrowIcon redirect={'#experience'} />
     </section>
   )
 }

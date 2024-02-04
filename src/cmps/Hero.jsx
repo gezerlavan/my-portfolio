@@ -4,19 +4,8 @@ import githubIcon from '../assets/img/github.png'
 import resume from '../assets/Tal_Elias_Resume.pdf'
 
 export function Hero() {
-  function handleRedirect(link) {
-    if (!link) return
-    const linkedinUrl = 'https://www.linkedin.com/in/talelias/'
-    const githubUrl = 'https://github.com/gezerlavan'
-    if (link === 'linkedin')
-      window.open(linkedinUrl, '_blank', 'noopener,noreferrer')
-    if (link === 'github')
-      window.open(githubUrl, '_blank', 'noopener,noreferrer')
-  }
-
-  function onDownloadCV() {
-    window.open(resume, '_blank')
-  }
+  const linkedinUrl = 'https://www.linkedin.com/in/talelias/'
+  const githubUrl = 'https://github.com/gezerlavan'
 
   return (
     <section className="hero flex">
@@ -28,24 +17,22 @@ export function Hero() {
         <h1 className="title">Tal Elias</h1>
         <p className="section-text-p2">Full Stack Developer</p>
         <div className="btn-container">
-          <button className="btn btn-color-2" onClick={onDownloadCV}>
-            Download CV
+          <button className="btn btn-color-2">
+            <a href={resume} target="_blank">
+              Download CV
+            </a>
           </button>
-          <button className="btn btn-color-1">Contact Info</button>
+          <button className="btn btn-color-1">
+            <a href="#contact">Contact Info</a>
+          </button>
         </div>
         <div className="socials-container flex justify-center">
-          <img
-            src={linkedinIcon}
-            alt="Linkedin icon"
-            className="icon"
-            onClick={() => handleRedirect('linkedin')}
-          />
-          <img
-            src={githubIcon}
-            alt="Github icon"
-            className="icon"
-            onClick={() => handleRedirect('github')}
-          />
+          <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+            <img src={linkedinIcon} alt="Linkedin icon" className="icon" />
+          </a>
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt="Github icon" className="icon" />
+          </a>
         </div>
       </div>
     </section>
