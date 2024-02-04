@@ -5,5 +5,9 @@ header.page-header {
   .logo {
     font-size: 2rem;
     cursor: default;
+
+    &:hover {
+      animation: tada 0.9s;
+    }
   }
 }

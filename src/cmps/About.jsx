@@ -91,7 +91,14 @@ export function About() {
           </button>
         </div>
       </dialog>
-      <img src={arrowIcon} alt="Arrow icon" className="arrow icon" />
+      <img
+        src={arrowIcon}
+        alt="Arrow icon"
+        className="arrow icon"
+        onClick={() => {
+          window.location.href = '#experience'
+        }}
+      />
     </section>
   )
 }

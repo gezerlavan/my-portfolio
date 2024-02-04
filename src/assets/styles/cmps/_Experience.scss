@@ -1,0 +1,39 @@
+section.experience {
+  position: relative;
+
+  .experience-containers {
+    gap: 2rem;
+    margin-block: 2rem;
+    .experience-container {
+      flex: 1;
+      padding: 1.5rem;
+      border-radius: 2rem;
+      border: $clr-dark2 0.1rem solid;
+      border-color: rgb(163, 163, 163);
+      text-align: center;
+
+      h2.experience-sub-title {
+        margin-block-end: 2rem;
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: $clr-dark3;
+      }
+
+      .experience-article-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        text-align: initial;
+
+        article.experience-article {
+          width: 10rem;
+          gap: 0.5rem;
+
+          img {
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}

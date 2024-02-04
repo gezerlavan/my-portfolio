@@ -10,11 +10,13 @@
 @import 'basics/base';
 
 // CMPS
-  @import 'cmps/Hero';
-  @import 'cmps/About';
+@import 'cmps/Hero';
+@import 'cmps/About';
+@import 'cmps/Experience';
+// layout
+@import 'cmps/layout/PageHeader';
+@import 'cmps/layout/NavLinks';
+@import 'cmps/layout/HamburgerMenu';
+@import 'cmps/layout/HamburgerIcon';
 
-  // layout
-  @import 'cmps/layout/PageHeader';
-  @import 'cmps/layout/NavLinks';
-  @import 'cmps/layout/HamburgerMenu';
-  @import 'cmps/layout/HamburgerIcon';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
