@@ -1,6 +1,14 @@
 section.contact {
-  height: 70vh;
+  height: 40vh;
+  @include for-narrow-layout {
+    height: fit-content;
+  }
+  @include for-normal-layout {
+    height: 70vh;
+  }
   .contact-info-upper-container {
+    flex-wrap: wrap;
+    gap: .5rem;
     margin: 2rem auto;
     padding: 0.5rem;
     border-radius: 2rem;
@@ -8,10 +16,15 @@ section.contact {
 
     .contact-info-container {
       gap: 0.5rem;
-      margin: 1rem;
+      @include for-narrow-layout {
+        margin: 1rem;
+      }
 
       p {
-        font-size: larger;
+        font-size: 1rem;
+        @include for-normal-layout {
+          font-size: larger;
+        }
       }
     }
   }

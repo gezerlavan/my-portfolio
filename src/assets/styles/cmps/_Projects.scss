@@ -2,6 +2,7 @@ section.projects {
   position: relative;
 
   .projects-article-container {
+    flex-wrap: wrap;
     gap: 2rem;
     margin-block: 2rem;
 
@@ -29,7 +30,7 @@ section.projects {
 
       .btn-container {
         button {
-          border-color: rgb(163, 163, 163)
+          border-color: rgb(163, 163, 163);
         }
       }
     }

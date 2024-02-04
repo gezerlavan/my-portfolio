@@ -1,6 +1,10 @@
 section.hero {
-  justify-content: center;
-  gap: 5rem;
+  @include for-normal-layout {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+
   height: 80vh;
 
   img {

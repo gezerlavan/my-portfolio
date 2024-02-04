@@ -1,9 +1,9 @@
 .hamburger-menu {
-  @include for-mobile-layout {
-    display: flex;
-  }
+  display: flex;
 
-  display: none;
+  @include for-normal-layout {
+    display: none;
+  }
 
   .container {
     position: relative;

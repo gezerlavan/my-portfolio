@@ -23,3 +23,7 @@
 @import 'cmps/layout/PageFooter';
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+// section:not(.hero, #about, #experience, #projects, #contact) {
+//   display: none;
+// }

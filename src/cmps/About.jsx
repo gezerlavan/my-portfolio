@@ -25,7 +25,7 @@ export function About() {
     <section id="about" className="about">
       <p className="section-text-p1">Get to know more</p>
       <h1 className="title">About Me</h1>
-      <div className="about-container flex">
+      <div className="about-container">
         <div className="pic-container">
           <img src={profilePic} alt="Profile picture" />
         </div>

@@ -1,4 +1,9 @@
 footer.page-footer {
-  height: 26vh;
-  gap: 4rem;
+  height: 40vh;
+  @include for-narrow-layout {
+    height: 26vh;
+  }
+  p {
+    text-align: center;
+  }
 }

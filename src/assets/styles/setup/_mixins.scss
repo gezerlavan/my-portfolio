@@ -6,17 +6,23 @@
   }
 }
 
+@mixin for-narrow-layout {
+  @media (min-width: $break-mobile) {
+    @content;
+  }
+}
+
 @mixin for-normal-layout {
   @media (min-width: $break-normal) {
     @content;
   }
 }
 
-@mixin for-wide-layout {
-  @media (min-width: $break-wide) {
-    @content;
-  }
-}
+// @mixin for-wide-layout {
+//   @media (min-width: $break-normal) {
+//     @content;
+//   }
+// }
 
 @mixin layoutGTC($max, $padding: $layoutPadding) {
   grid-template-columns:

@@ -11,14 +11,23 @@ section.about {
   }
 
   .about-container {
-    gap: 4rem;
-    height: 80%;
+    // height: fit-content;
+
+    @include for-normal-layout {
+      display: flex;
+      gap: 4rem;
+      height: 80%;
+    }
+    .about-details-container {
+      flex: 1;
+    }
 
     img {
       border-radius: 2rem;
     }
 
     .about-containers {
+      flex-wrap: wrap;
       gap: 2rem;
       margin-block: 2rem;
 

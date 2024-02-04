@@ -8,7 +8,7 @@ export function Hero() {
   const githubUrl = 'https://github.com/gezerlavan'
 
   return (
-    <section className="hero flex">
+    <section className="hero">
       <div className="pic-container">
         <img src={profilePic} alt="Profile picture" />
       </div>
