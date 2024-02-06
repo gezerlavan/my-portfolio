@@ -3,29 +3,31 @@ section.projects {
 
   .projects-article-container {
     flex-wrap: wrap;
-    gap: 2rem;
-    margin-block: 2rem;
+    gap: 2em;
+    margin-block: 2em;
 
     .article-container {
-      padding: 1.5rem;
+      padding: 1.5em;
       flex: 1;
-      border-radius: 2rem;
-      border: 0.1rem solid rgb(163, 163, 163);
+      border-radius: 2em;
+      border: 0.1em solid rgb(163, 163, 163);
       text-align: center;
-      background: rgb(250, 250, 250);
 
       .img-contianer {
         img {
           width: 90%;
           height: 90%;
-          border-radius: 2rem;
+          border-radius: 2em;
         }
       }
 
       h2.project-title {
-        margin: 1rem;
+        margin-block: 1em;
         font-size: 1.75rem;
         font-weight: 600;
+        max-height: 44px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       .btn-container {

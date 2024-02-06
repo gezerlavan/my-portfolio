@@ -1,13 +1,16 @@
 import { useRef } from 'react'
 import profilePic from '../assets/img/profile-pic.jpg'
-import experienceIcon from '../assets/img/experience.png'
 import certificate from '../assets/full_stack_certificate.jpg'
 import useClickOutside from '../customHooks/useClickOutside'
 import { ArrowIcon } from './layout/ArrowIcon'
+import { useMantineColorScheme } from '@mantine/core'
+import useIconTheme from '../customHooks/useIconTheme'
 
 export function About() {
   const dialogRef = useRef(null)
   const dialogContainer = useRef(null)
+  const { colorScheme } = useMantineColorScheme()
+  const iconTheme = useIconTheme()
 
   function toggleDialog() {
     if (!dialogRef.current) return
@@ -33,7 +36,7 @@ export function About() {
           <div className="about-containers flex">
             <div className="details-container">
               <img
-                src={experienceIcon}
+                src={iconTheme('experience')}
                 alt="Experience icon"
                 className="icon default"
               />
@@ -45,7 +48,7 @@ export function About() {
             </div>
             <div className="details-container">
               <img
-                src={experienceIcon}
+                src={iconTheme('education')}
                 alt="Experience icon"
                 className="icon default"
               />
@@ -78,7 +81,10 @@ export function About() {
           </div>
         </div>
       </div>
-      <dialog ref={dialogRef}>
+      <dialog
+        ref={dialogRef}
+        className={colorScheme && colorScheme === 'dark' ? 'dark' : ''}
+      >
         <div
           ref={dialogContainer}
           className="dialog-container flex column align-center"

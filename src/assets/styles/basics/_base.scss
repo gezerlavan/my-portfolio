@@ -44,6 +44,7 @@ body {
   line-height: 1.5;
   color: $clr-dark1;
   background-color: $clr-light1;
+  overflow-x: hidden;
   // background-color: rgb(77, 77, 77); /*temp */
 }
 
@@ -53,7 +54,7 @@ a {
 }
 
 p {
-  color: $clr-dark3;
+  color: $clr-dark4;
 }
 
 /* Remove list styles on ul, ol elements */
@@ -121,12 +122,12 @@ section {
     justify-content: center;
     width: auto;
     height: 46vw;
-    margin-block-end: 2rem;
+    margin-block-end: 2em;
 
     @include for-narrow-layout {
       height: 275px;
       width: 275px;
-      margin: 0 auto 2rem;
+      margin: 0 auto 2em;
     }
 
     @include for-normal-layout {
@@ -142,7 +143,7 @@ section {
 
   .section-text-p2 {
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 
     @include for-narrow-layout {
       font-size: 1.75rem;
@@ -156,7 +157,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1em;
 }
 
 .btn {
@@ -181,13 +182,13 @@ section {
     &:hover {
       color: $clr-light1;
       background: $clr-dark2;
-      border: 0.1rem solid $clr-light1;
+      border: 0.1em solid $clr-light1;
     }
   }
 
   &.btn-color-1,
   &.btn-color-2 {
-    border: 0.1rem solid $clr-dark2;
+    border: 0.1em solid $clr-dark2;
 
     &:hover {
       cursor: pointer;
@@ -198,7 +199,7 @@ section {
 /* ICON */
 
 .icon {
-  height: 2rem;
+  height: 2em;
   cursor: pointer;
 
   &.default {
@@ -208,8 +209,8 @@ section {
   &.arrow {
     display: none;
     position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+    right: -5em;
+    bottom: 2.5em;
 
     @include for-normal-layout {
       display: block;

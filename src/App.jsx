@@ -5,6 +5,7 @@ import { Hero } from './cmps/Hero'
 import { Projects } from './cmps/Projects'
 import { PageFooter } from './cmps/layout/PageFooter'
 import { PageHeader } from './cmps/layout/PageHeader'
+import './assets/styles/main.scss'
 
 export function App() {
   return (

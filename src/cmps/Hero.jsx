@@ -1,11 +1,11 @@
 import profilePic from '../assets/img/profile-pic.jpg'
-import linkedinIcon from '../assets/img/linkedin.png'
-import githubIcon from '../assets/img/github.png'
 import resume from '../assets/Tal_Elias_Resume.pdf'
+import useIconTheme from '../customHooks/useIconTheme'
 
 export function Hero() {
   const linkedinUrl = 'https://www.linkedin.com/in/talelias/'
   const githubUrl = 'https://github.com/gezerlavan'
+  const iconTheme = useIconTheme()
 
   return (
     <section className="hero">
@@ -28,10 +28,14 @@ export function Hero() {
         </div>
         <div className="socials-container flex justify-center">
           <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
-            <img src={linkedinIcon} alt="Linkedin icon" className="icon" />
+            <img
+              src={iconTheme('linkedin')}
+              alt="Linkedin icon"
+              className="icon"
+            />
           </a>
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-            <img src={githubIcon} alt="Github icon" className="icon" />
+            <img src={iconTheme('github')} alt="Github icon" className="icon" />
           </a>
         </div>
       </div>

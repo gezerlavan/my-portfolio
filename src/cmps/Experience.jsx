@@ -1,11 +1,12 @@
 import { useRef } from 'react'
-import experienceIcon from '../assets/img/experience.png'
 import useOnScreen from '../customHooks/useOnScreen'
 import { ArrowIcon } from './layout/ArrowIcon'
+import useIconTheme from '../customHooks/useIconTheme'
 
 export function Experience() {
   const experienceSectionRef = useRef(null)
   const isExperienceSectionVisible = useOnScreen(experienceSectionRef)
+  const iconTheme = useIconTheme()
 
   const experienceSkills = [
     {
@@ -46,7 +47,7 @@ export function Experience() {
                   key={idx}
                 >
                   <img
-                    src={experienceIcon}
+                    src={iconTheme('checkmark')}
                     alt="Experience icon"
                     className="icon"
                   />

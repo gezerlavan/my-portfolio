@@ -1,9 +1,11 @@
-import arrowIcon from '../../assets/img/arrow.png'
+import useIconTheme from '../../customHooks/useIconTheme'
 
 export function ArrowIcon({ redirect }) {
+  const iconTheme = useIconTheme()
+
   return (
     <img
-      src={arrowIcon}
+      src={iconTheme('arrow')}
       alt="Arrow icon"
       className="arrow icon"
       onClick={() => {
