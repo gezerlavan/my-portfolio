@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Remove default margin and padding */
@@ -46,7 +47,6 @@ body {
   color: $clr-dark1;
   background-color: $clr-light1;
   overflow-x: hidden;
-  // background-color: rgb(77, 77, 77); /*temp */
 }
 
 a {

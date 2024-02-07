@@ -23,10 +23,12 @@ header.page-header {
 
     .logo {
       padding-top: 0.05em;
-      min-width: 122px;
       margin-inline-end: 0.3em;
       font-family: 'Cute Font';
       font-size: 3rem;
+      white-space: nowrap;
+      user-select: none;
+      -webkit-user-select: none;
       cursor: default;
 
       &:hover {
