@@ -1,8 +1,6 @@
-import useIconTheme from '../customHooks/useIconTheme'
+import { iconTheme } from '../services/util.service'
 
 export function Contact() {
-  const iconTheme = useIconTheme()
-
   return (
     <section id="contact" className="contact flex column justify-center">
       <p className="section-text-p1">Get in touch</p>

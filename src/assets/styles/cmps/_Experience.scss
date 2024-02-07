@@ -26,8 +26,12 @@ section.experience {
       .experience-article-container {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 2.5em;
+        gap: 2em;
         text-align: initial;
+
+        @include for-narrow-layout {
+          gap: 2.5em;
+        }
 
         article.experience-article {
           width: 10em;

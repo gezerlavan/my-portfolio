@@ -35,14 +35,22 @@ section.about {
     .about-containers {
       flex-wrap: wrap;
       gap: 2em;
-      margin-block-end: 2em;
+      margin-block-end: 1em;
+
+      @include for-narrow-layout {
+        margin-block-end: 2em;
+      }
 
       .details-container {
-        padding: 1.5em;
+        padding: 1em;
         flex: 1;
         border-radius: 2em;
         border: 0.1em solid rgb(163, 163, 163);
         text-align: center;
+
+        @include for-narrow-layout {
+          padding: 1.5em;
+        }
 
         span.certificate {
           display: inline-block;

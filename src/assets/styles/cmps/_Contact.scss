@@ -1,5 +1,6 @@
 section.contact {
   height: 32vh;
+  padding-top: 0;
   @include for-narrow-layout {
     height: fit-content;
   }

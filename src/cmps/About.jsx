@@ -4,13 +4,12 @@ import certificate from '../assets/full_stack_certificate.jpg'
 import useClickOutside from '../customHooks/useClickOutside'
 import { ArrowIcon } from './layout/ArrowIcon'
 import { useMantineColorScheme } from '@mantine/core'
-import useIconTheme from '../customHooks/useIconTheme'
+import { iconTheme } from '../services/util.service'
 
 export function About() {
   const dialogRef = useRef(null)
   const dialogContainer = useRef(null)
   const { colorScheme } = useMantineColorScheme()
-  const iconTheme = useIconTheme()
 
   function toggleDialog() {
     if (!dialogRef.current) return

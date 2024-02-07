@@ -5,10 +5,41 @@ section.hero {
     gap: 5em;
   }
 
-  height: 80vh;
+  height: 92vh;
+  padding-top: 20vh;
 
-  img {
-    border-radius: 50%;
+  @include for-normal-layout {
+    padding-top: 4vh;
+  }
+
+  .pic-container {
+    position: relative;
+
+    .draggable-div {
+      position: absolute;
+      top: -2%;
+      left: 23%;
+      width: 54%;
+      height: calc(46vw + 5%);
+      border-radius: 50%;
+      backdrop-filter: blur(15px);
+      cursor: pointer;
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      @include for-narrow-layout {
+        top: -2%;
+        left: -3%;
+        width: 105%;
+        height: 105%;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+    }
   }
 
   .section-text {

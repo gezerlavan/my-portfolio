@@ -1,4 +1,3 @@
-import arrowIcon from '../assets/img/arrow.png'
 import { ArrowIcon } from './layout/ArrowIcon'
 import projectOneImg from '../assets/img/project-1.png'
 import projectTwoImg from '../assets/img/project-2.png'

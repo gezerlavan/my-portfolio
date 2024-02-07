@@ -1,15 +1,21 @@
 import profilePic from '../assets/img/profile-pic.jpg'
 import resume from '../assets/Tal_Elias_Resume.pdf'
-import useIconTheme from '../customHooks/useIconTheme'
+import { iconTheme } from '../services/util.service'
+import { motion } from 'framer-motion'
 
 export function Hero() {
   const linkedinUrl = 'https://www.linkedin.com/in/talelias/'
   const githubUrl = 'https://github.com/gezerlavan'
-  const iconTheme = useIconTheme()
 
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="pic-container">
+        <motion.div
+          drag
+          dragElastic={0.5}
+          dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+          className="draggable-div"
+        ></motion.div>
         <img src={profilePic} alt="Profile picture" />
       </div>
       <div className="section-text">

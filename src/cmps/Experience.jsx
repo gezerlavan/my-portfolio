@@ -1,12 +1,11 @@
 import { useRef } from 'react'
 import useOnScreen from '../customHooks/useOnScreen'
 import { ArrowIcon } from './layout/ArrowIcon'
-import useIconTheme from '../customHooks/useIconTheme'
+import { iconTheme } from '../services/util.service'
 
 export function Experience() {
   const experienceSectionRef = useRef(null)
   const isExperienceSectionVisible = useOnScreen(experienceSectionRef)
-  const iconTheme = useIconTheme()
 
   const experienceSkills = [
     {

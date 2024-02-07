@@ -1,12 +1,37 @@
 header.page-header {
-  height: 17vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7vh;
+  background: #bfbdde38;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 
-  .logo {
-    font-size: 2rem;
-    cursor: default;
+  .header-container {
+    height: 7vh;
+    padding-inline: $layoutPadding;
 
-    &:hover {
-      animation: tada 0.9s;
+    @include for-narrow-layout {
+      padding-inline: 40px;
+    }
+
+    @include for-normal-layout {
+      padding-inline: 160px;
+    }
+
+    .logo {
+      padding-top: 0.05em;
+      min-width: 122px;
+      margin-inline-end: 0.3em;
+      font-family: 'Cute Font';
+      font-size: 3rem;
+      cursor: default;
+
+      &:hover {
+        animation: tada 0.9s;
+      }
     }
   }
 }

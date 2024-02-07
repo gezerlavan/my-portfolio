@@ -1,8 +1,6 @@
-import useIconTheme from '../../customHooks/useIconTheme'
+import { iconTheme } from '../../services/util.service'
 
 export function ArrowIcon({ redirect }) {
-  const iconTheme = useIconTheme()
-
   return (
     <img
       src={iconTheme('arrow')}

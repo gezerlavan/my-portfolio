@@ -6,10 +6,20 @@ import moonIcon from '../../assets/img/moon.svg'
 
 export function ThemeSwitch() {
   const [isOn, setIsOn] = useState(false)
-  const { toggleColorScheme, colorScheme } = useMantineColorScheme()
+  const { colorScheme, setColorScheme, toggleColorScheme } =
+    useMantineColorScheme()
+  const darkModePreferred = window.matchMedia(
+    '(prefers-color-scheme: dark)'
+  ).matches
 
   useEffect(() => {
-    colorScheme && colorScheme === 'dark' ? setIsOn(true) : setIsOn(false)
+    if (colorScheme === 'auto') {
+      darkModePreferred
+        ? (setIsOn(true), setColorScheme('dark'))
+        : (setIsOn(false), setColorScheme('light'))
+    } else {
+      colorScheme === 'dark' ? setIsOn(true) : setIsOn(false)
+    }
   }, [])
 
   const spring = {
