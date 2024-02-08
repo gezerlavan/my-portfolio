@@ -36,16 +36,20 @@ export function Projects() {
             </div>
             <h2 className="project-title">{article.title}</h2>
             <div className="btn-container">
-              <button className="btn btn-color-2">
-                <a href={article.githubUrl} target="_blank">
-                  Github
-                </a>
-              </button>
-              <button className="btn btn-color-2">
-                <a href={article.demoUrl} target="_blank">
-                  Live demo
-                </a>
-              </button>
+              <a
+                href={article.githubUrl}
+                target="_blank"
+                className="btn btn-color-2"
+              >
+                <span>Github</span>
+              </a>
+              <a
+                href={article.demoUrl}
+                target="_blank"
+                className="btn btn-color-2"
+              >
+                <span>Live demo</span>
+              </a>
             </div>
           </article>
         ))}

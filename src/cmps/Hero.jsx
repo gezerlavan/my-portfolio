@@ -23,14 +23,12 @@ export function Hero() {
         <h1 className="title">Tal Elias</h1>
         <p className="section-text-p2">Full Stack Developer</p>
         <div className="btn-container">
-          <button className="btn btn-color-2">
-            <a href={resume} target="_blank">
-              Download CV
-            </a>
-          </button>
-          <button className="btn btn-color-1">
-            <a href="#contact">Contact Info</a>
-          </button>
+          <a href={resume} target="_blank" className="btn btn-color-2">
+            <span>Download CV</span>
+          </a>
+          <a href="#contact" className="btn btn-color-1">
+            <span>Contact Info</span>
+          </a>
         </div>
         <div className="socials-container flex justify-center">
           <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
