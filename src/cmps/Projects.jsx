@@ -6,22 +6,22 @@ import projectThreeImg from '../assets/img/project-3.png'
 export function Projects() {
   const projectsArticles = [
     {
-      title: 'Project One',
+      title: 'HairBNB',
       imgUrl: projectOneImg,
-      githubUrl: '#',
-      demoUrl: '#',
+      githubUrl: 'https://github.com/gezerlavan/sprint4-hairbnb-frontend',
+      demoUrl: 'https://hairbnb.onrender.com/',
     },
     {
-      title: 'Project Two',
+      title: 'Mister-Toy',
       imgUrl: projectTwoImg,
-      githubUrl: '#',
-      demoUrl: '#',
+      githubUrl: 'https://github.com/gezerlavan/mister-toy-frontend',
+      demoUrl: 'https://mister-toy-qgly.onrender.com/',
     },
     {
-      title: 'Project Three',
+      title: 'Meme-Generator',
       imgUrl: projectThreeImg,
-      githubUrl: '#',
-      demoUrl: '#',
+      githubUrl: 'https://github.com/gezerlavan/meme-generator',
+      demoUrl: 'https://gezerlavan.github.io/meme-generator/',
     },
   ]
   return (
@@ -37,10 +37,14 @@ export function Projects() {
             <h2 className="project-title">{article.title}</h2>
             <div className="btn-container">
               <button className="btn btn-color-2">
-                <a href="#">Github</a>
+                <a href={article.githubUrl} target="_blank">
+                  Github
+                </a>
               </button>
               <button className="btn btn-color-2">
-                <a href="#">Live demo</a>
+                <a href={article.demoUrl} target="_blank">
+                  Live demo
+                </a>
               </button>
             </div>
           </article>

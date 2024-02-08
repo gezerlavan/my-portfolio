@@ -27,7 +27,7 @@ section.projects {
         font-weight: 600;
         max-height: 44px;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        overflow:hidden;
       }
 
       .btn-container {
