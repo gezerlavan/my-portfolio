@@ -1,15 +1,15 @@
-import { useState } from 'react'
 import { HamburgerIcon } from './HamburgerIcon'
 import { NavLinks } from './NavLinks'
+import { useDisclosure } from '@mantine/hooks'
 
 export function HamburgerMenu() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [opened, { toggle, close }] = useDisclosure()
 
   return (
     <div className="hamburger-menu">
       <div className="container">
-        <HamburgerIcon isOpen={isOpen} setIsOpen={setIsOpen} />
-        <NavLinks isOpen={isOpen} />
+        <HamburgerIcon opened={opened} toggle={toggle} close={close} />
+        <NavLinks opened={opened} />
       </div>
     </div>
   )

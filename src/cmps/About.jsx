@@ -70,12 +70,12 @@ export function About() {
           </div>
           <div className="text-container">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              omnis cumque officiis totam. Cumque amet at iure excepturi eaque
-              eum. Labore cumque, neque blanditiis pariatur dolore, ab aperiam
-              illo sequi amet magnam error? Quasi officiis laborum libero ut cum
-              natus, at deleniti amet facere quidem aut, sequi, laudantium
-              recusandae sint.
+              Welcome to my digital realm! I'm Tal—a lifelong puzzle enthusiast
+              who's found a new passion in full stack development. With every
+              line of code, I embark on a thrilling adventure, piecing together
+              solutions and unraveling complexities. Join me as we navigate this
+              exciting journey together, exploring the endless possibilities of
+              the digital landscape, one line at a time! 💻✨
             </p>
           </div>
         </div>

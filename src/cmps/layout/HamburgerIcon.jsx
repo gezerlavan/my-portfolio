@@ -1,22 +1,19 @@
 import { useRef } from 'react'
+import { Burger } from '@mantine/core'
 import useClickOutside from '../../customHooks/useClickOutside'
 
-export function HamburgerIcon({ isOpen, setIsOpen }) {
+export function HamburgerIcon({ opened, toggle, close }) {
   const hamburgerIconRef = useRef(null)
 
-  useClickOutside(hamburgerIconRef, () => setIsOpen(false))
+  useClickOutside(hamburgerIconRef, () => close())
 
   return (
-    <div
+    <Burger
       ref={hamburgerIconRef}
-      className={`hamburger-icon flex column space-between ${
-        isOpen ? 'open' : ''
-      }`}
-      onClick={() => setIsOpen(!isOpen)}
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      opened={opened}
+      onClick={toggle}
+      aria-label="Toggle navigation"
+      transitionDuration={200}
+    />
   )
 }

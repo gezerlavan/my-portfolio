@@ -35,7 +35,8 @@ section.experience {
 
         article.experience-article {
           width: 10em;
-          gap: 0.5em;
+          gap: 1em;
+          justify-content: flex-start;
 
           img {
             cursor: default;

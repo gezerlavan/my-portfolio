@@ -26,7 +26,7 @@ export function Experience() {
         { title: 'Express', level: 'intermediate' },
         { title: 'MongoDB', level: 'intermediate' },
         { title: 'RESTful API', level: 'intermediate' },
-        { title: 'Git', level: 'intermediate' },
+        { title: 'MySQL', level: 'basic' },
       ],
     },
   ]

@@ -8,6 +8,7 @@ nav.nav-links {
     padding: 0.5em;
     border-radius: 1em;
     overflow: hidden;
+    transition: max-height 0.2s ease, background-color 0.2s ease;
 
     @include for-normal-layout {
       position: initial;
@@ -59,7 +60,7 @@ nav.nav-links {
     li {
       font-size: 1.5rem;
       text-align: center;
-      padding: 0.4em;
+      padding: 0.3em;
 
       a.nav-link {
         transition: all 0.3s ease;

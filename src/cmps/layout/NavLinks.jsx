@@ -1,13 +1,13 @@
 import { useMantineColorScheme } from '@mantine/core'
 
-export function NavLinks({ isOpen, footer }) {
+export function NavLinks({ opened, footer }) {
   const navLinks = ['About', 'Experience', 'Projects', 'Contact']
   const { colorScheme } = useMantineColorScheme()
 
   return (
     <nav className="nav-links">
       <ul
-        className={`${isOpen ? 'open ' : ''}${
+        className={`${opened ? 'open ' : ''}${
           footer ? 'footer ' : ''
         }${colorScheme}`}
       >
