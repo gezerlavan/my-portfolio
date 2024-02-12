@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import profilePic from '../assets/img/profile-pic.jpg'
+import profilePic from '../assets/img/profile-pic1.png'
 import certificate from '../assets/full_stack_certificate.jpg'
 import useClickOutside from '../customHooks/useClickOutside'
 import { ArrowIcon } from './layout/ArrowIcon'
