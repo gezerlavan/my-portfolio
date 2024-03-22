@@ -1,9 +1,0 @@
-footer.page-footer {
-  height: 32vh;
-  @include for-narrow-layout {
-    height: 26vh;
-  }
-  p {
-    text-align: center;
-  }
-}
