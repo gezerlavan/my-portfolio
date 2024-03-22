@@ -24,6 +24,7 @@ export function Projects() {
       demoUrl: 'https://gezerlavan.github.io/meme-generator/',
     },
   ]
+  
   return (
     <section id="projects" className="projects">
       <p className="section-text-p1">Browse my recent</p>

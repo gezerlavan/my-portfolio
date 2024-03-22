@@ -1,5 +1,5 @@
 import profilePic from '../assets/img/profile-pic.jpg'
-import resume from '../assets/Tal_Elias_Resume.pdf'
+import cv from '../assets/Tal_Elias_CV.pdf'
 import { iconTheme } from '../services/util.service'
 import { motion } from 'framer-motion'
 
@@ -23,7 +23,7 @@ export function Hero() {
         <h1 className="title">Tal Elias</h1>
         <p className="section-text-p2">Full Stack Developer</p>
         <div className="btn-container">
-          <a href={resume} target="_blank" className="btn btn-color-2">
+          <a href={cv} target="_blank" className="btn btn-color-2">
             <span>Download CV</span>
           </a>
           <a href="#contact" className="btn btn-color-1">

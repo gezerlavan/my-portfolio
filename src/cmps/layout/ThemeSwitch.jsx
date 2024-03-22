@@ -7,7 +7,8 @@ import moonIcon from '../../assets/img/moon.svg'
 export function ThemeSwitch() {
   const [isOn, setIsOn] = useState(false)
   const { colorScheme, setColorScheme, toggleColorScheme } =
-    useMantineColorScheme()
+    useMantineColorScheme({ keepTransitions: true })
+    
   const darkModePreferred = window.matchMedia(
     '(prefers-color-scheme: dark)'
   ).matches
