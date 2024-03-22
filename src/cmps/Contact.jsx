@@ -13,7 +13,7 @@ export function Contact() {
             className="icon email"
           />
           <p>
-            <a href="mailto:talelias2@gmail.com">talelias2@gmail.com</a>
+            <a href="mailto:dev.talelias@gmail.com">dev.talelias@gmail.com</a>
           </p>
         </div>
         <div className="contact-info-container flex auto-center">
